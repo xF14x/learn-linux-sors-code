@@ -1,5 +1,6 @@
 from colorama import Fore, Back, Style
 from os import system
+from webbrowser import open as Open_Web
 # =-=-=-=-=-=-=-=-=-=
 system("clear")
 print(Fore.RED)
@@ -20,6 +21,10 @@ cp = "6"
 mv = "7"
 rm = "8"
 ls = "9"
+Twitter = "https://twitter.com/F14Commander"
+Youtube = "https://www.youtube.com/channel/UCcOXGSw12Y-d4359PWLrxgQ"
+GitHub = "https://github.com/xF14x"
+Telegram = "https://t.me/F14CommanderTech"
 print("""
 (1) كيف تسوي ملف
 
@@ -39,6 +44,9 @@ print("""
 
 (9) كيف تظهر الي داخل الملف
 
+(T) حسابي في تويتر 
+
+(Y) قناتي على اليوتيوب
 """)
 print(Fore.WHITE)
 Number_Of_The_Command = input("??:")
@@ -128,3 +136,18 @@ ls -l
 
 ls -la
 وبس""")
+
+
+# =-=-=-=-=-=-=-=-=
+# Twitter
+if Number_Of_The_Command == "T" or Number_Of_The_Command == "t":
+    Open_Web(Twitter)
+# Youtube
+if Number_Of_The_Command == "Y" or Number_Of_The_Command == "y":
+    Open_Web(Youtube)
+# Github
+if Number_Of_The_Command == "G" or Number_Of_The_Command == "g":
+    Open_Web(GitHub)
+# Telegram
+if Number_Of_The_Command == "Te" or Number_Of_The_Command == "te" or Number_Of_The_Command == "TE" or Number_Of_The_Command == "tE" :
+    Open_Web(Telegram)
