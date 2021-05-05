@@ -1,4 +1,7 @@
 from colorama import Fore, Back, Style
+from os import system
+# =-=-=-=-=-=-=-=-=-=
+system("clear")
 print(Fore.RED)
 print("""  _                         _ _                  
  | | ___  __ _ _ __ _ __   | (_)_ __  _   ___  __
